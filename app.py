@@ -41,6 +41,8 @@ def details():
                        return render_template('coursedetails.html',average_marks=Average_marks,maximum_marks=Maximum_marks,img='static/plot.png')
             if len(data)==0:
                       return render_template("wrong.html")
+            else:
+                      return render_template("wrong.html")
      
 app.debug = True
 app.run()
