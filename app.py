@@ -39,9 +39,9 @@ def details():
                        plt.ylabel('Frequency')
                        plt.savefig('static/plot.png')
                        return render_template('coursedetails.html',average_marks=Average_marks,maximum_marks=Maximum_marks,img='static/plot.png')
-            if len(data)==0:
+                 if len(data)==0:
                       return render_template("wrong.html")
-            else:
+                  else:
                       return render_template("wrong.html")
      
 app.debug = True
